@@ -99,42 +99,34 @@ void loop() {
     irrecv.resume();
   }
 }
-//button 0
 void posDefault() {
   servo_swivel.write(90);
   servo_height.write(20);
   servo_clamp.write(45);
   servo_reach.write(90);
 }
-//button 1
 void extendArm() {
   servo_height.write(90);
   delay(100);
   servo_reach.write(160);
 }
-//button 2
 void retractArm() {
   servo_reach.write(90);
   delay(100);
   servo_height.write(10);
 }
-//button 3
 void faceLeft() {
   servo_swivel.write(180);
 }
-//button 4
 void faceCenter() {
   servo_swivel.write(90);
 }
-//button 5
 void faceRight() {
   servo_swivel.write(0);
 }
-//button 6
 void clamp() {
   servo_clamp.write(120);
 }
-//button 7
 void unClamp() {
   servo_clamp.write(45);
 }
